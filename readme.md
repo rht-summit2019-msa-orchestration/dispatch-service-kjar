@@ -1,4 +1,4 @@
 Repository Init Content
 =======================
 
-Your project description here.
+Kjar project for Acme Ride dispatch service.
