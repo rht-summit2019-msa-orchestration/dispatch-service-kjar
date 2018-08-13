@@ -79,6 +79,16 @@
      "displayName" : "Decision Task",
      "icon" : "defaultdecisionicon.png",
      "category" : "Decision tasks"
-   ]
+   ],
+
+  [
+    "name" : "SendMessage",
+    "parameters" : [
+        "destination" : new StringDataType(),
+        "messageType" : new StringDataType()
+    ],
+    "displayName" : "SendMessage",
+    "icon" : "defaultservicenodeicon.png"
+  ]
 
 ]
