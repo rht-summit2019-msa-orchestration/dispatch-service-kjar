@@ -16,6 +16,16 @@
     ],
     "displayName" : "SendMessage",
     "icon" : "defaultservicenodeicon.png"
-  ]
+  ],
+
+  [
+    "name" : "UpdateRide",
+    "parameters" : [
+        "rideId" : new StringDataType(),
+        "status" : new StringDataType()
+    ],
+    "displayName" : "SendMessage",
+    "icon" : "defaultservicenodeicon.png"
+  ],
 
 ]
