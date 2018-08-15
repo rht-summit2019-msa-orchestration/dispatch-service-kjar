@@ -4,7 +4,7 @@
   <bpmn2:itemDefinition id="_traceIdItem" structureRef="String"/>
   <bpmn2:signal id="_500bebc8-b66c-352e-80f9-3cdb38dfa8b6" name="DriverAssigned"/>
   <bpmn2:signal id="_7914bd39-aefe-3a55-8cfb-4ab6920d7ddd" name="RideStarted"/>
-  <bpmn2:signal id="_590e3d4f-24ef-3764-b8c8-d6b133df8b3c" name="PassengerCancelled"/>
+  <bpmn2:signal id="_590e3d4f-24ef-3764-b8c8-d6b133df8b3c" name="PassengerCanceled"/>
   <bpmn2:itemDefinition id="__84A2FB44-9E32-41C9-BAD0-50686E706B52_TaskNameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__84A2FB44-9E32-41C9-BAD0-50686E706B52_DestinationInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__84A2FB44-9E32-41C9-BAD0-50686E706B52_MessageTypeInputXItem" structureRef="String"/>
@@ -76,7 +76,7 @@ System.out.println("Process " + _processId + ":" + _id + " for ride " + _rideId 
       <bpmn2:dataInputAssociation id="_9m-hqKB8Eei6taIRf23SjQ">
         <bpmn2:targetRef>_84A2FB44-9E32-41C9-BAD0-50686E706B52_DestinationInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_9m-hqaB8Eei6taIRf23SjQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_9m-hqqB8Eei6taIRf23SjQ"><![CDATA[send.destination.assign driver command]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_9m-hqqB8Eei6taIRf23SjQ"><![CDATA[send.destination.assign-driver-command]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_9m-hq6B8Eei6taIRf23SjQ">_84A2FB44-9E32-41C9-BAD0-50686E706B52_DestinationInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -124,10 +124,10 @@ System.out.println("Process " + _processId + ":" + _id + " for ride " + _rideId 
       <bpmn2:outgoing>_EFD5EA13-79A8-4C06-86E1-A6449BD3090A</bpmn2:outgoing>
       <bpmn2:signalEventDefinition id="_9m-hs6B8Eei6taIRf23SjQ" signalRef="_7914bd39-aefe-3a55-8cfb-4ab6920d7ddd"/>
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:intermediateCatchEvent id="_33ACF167-D92D-4260-B7D2-A85FF641897D" drools:selectable="true" drools:boundaryca="true" color:background-color="#f5deb3" color:border-color="#a0522d" color:color="#000000" name="Passenger Cancelled">
+    <bpmn2:intermediateCatchEvent id="_33ACF167-D92D-4260-B7D2-A85FF641897D" drools:selectable="true" drools:boundaryca="true" color:background-color="#f5deb3" color:border-color="#a0522d" color:color="#000000" name="Passenger Canceled">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Passenger Cancelled]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Passenger Canceled]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_07321433-AE86-40B1-9DC1-8EC443716986</bpmn2:incoming>
@@ -156,7 +156,7 @@ System.out.println("Process " + _processId + ":" + _id + " for ride " + _rideId 
       </bpmn2:extensionElements>
       <bpmn2:incoming>_C375C368-B594-45DE-97B7-E63239AE2115</bpmn2:incoming>
       <bpmn2:outgoing>_084A20ED-9EBE-4F46-BDA2-31F6A5678173</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[System.out.println("Driver Cancelled");]]></bpmn2:script>
+      <bpmn2:script><![CDATA[System.out.println("Passenger Canceled");]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_C375C368-B594-45DE-97B7-E63239AE2115" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_33ACF167-D92D-4260-B7D2-A85FF641897D" targetRef="_5D3EA1DF-79D9-4744-9864-128581E47A2F"/>
     <bpmn2:endEvent id="_82054E30-7D5D-498C-BED0-744B41D01C91" drools:selectable="true" color:background-color="#ff6347" color:border-color="#000000" color:color="#000000" name="">
