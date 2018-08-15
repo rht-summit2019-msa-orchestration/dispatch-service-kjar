@@ -24,7 +24,7 @@
         "rideId" : new StringDataType(),
         "status" : new StringDataType()
     ],
-    "displayName" : "SendMessage",
+    "displayName" : "UpdateRide",
     "icon" : "defaultservicenodeicon.png"
   ],
 
