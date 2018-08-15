@@ -140,7 +140,7 @@
         <bpmn2:dataInputAssociation id="_NtJnTaC6Eei6taIRf23SjQ">
           <bpmn2:targetRef>_84A2FB44-9E32-41C9-BAD0-50686E706B52_DestinationInputX</bpmn2:targetRef>
           <bpmn2:assignment id="_NtJnTqC6Eei6taIRf23SjQ">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_NtJnT6C6Eei6taIRf23SjQ"><![CDATA[send.destination.assign driver command]]></bpmn2:from>
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_NtJnT6C6Eei6taIRf23SjQ"><![CDATA[send.destination.assign_driver_command]]></bpmn2:from>
             <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_NtJnUKC6Eei6taIRf23SjQ">_84A2FB44-9E32-41C9-BAD0-50686E706B52_DestinationInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
