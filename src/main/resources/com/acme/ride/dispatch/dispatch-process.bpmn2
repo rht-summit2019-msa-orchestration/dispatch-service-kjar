@@ -397,7 +397,7 @@
       <bpmn2:dataInputAssociation id="_qljrhrBLEeigMq_3ZJzpfw">
         <bpmn2:targetRef>_1AD3CC03-7C18-4962-8395-DE56F1C6FC49_statusInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_qljrh7BLEeigMq_3ZJzpfw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qljriLBLEeigMq_3ZJzpfw"><![CDATA[RIDE_ENDED]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qljriLBLEeigMq_3ZJzpfw"><![CDATA[ENDED]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_qljribBLEeigMq_3ZJzpfw">_1AD3CC03-7C18-4962-8395-DE56F1C6FC49_statusInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -437,7 +437,7 @@
       <bpmn2:dataInputAssociation id="_qljrkrBLEeigMq_3ZJzpfw">
         <bpmn2:targetRef>_BD96866F-8B82-4AFC-9488-92832A233999_statusInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_qljrk7BLEeigMq_3ZJzpfw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qljrlLBLEeigMq_3ZJzpfw"><![CDATA[RIDE_STARTED]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_qljrlLBLEeigMq_3ZJzpfw"><![CDATA[STARTED]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_qljrlbBLEeigMq_3ZJzpfw">_BD96866F-8B82-4AFC-9488-92832A233999_statusInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
