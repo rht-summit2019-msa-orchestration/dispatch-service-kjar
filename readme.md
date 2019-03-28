@@ -1,4 +1,5 @@
-Repository Init Content
-=======================
+#### Dispatch Service Kjar
 
-Your project description here.
+Kjar that contains the dispatch process definition.
+
+Version: RHPAM 7.3.0
